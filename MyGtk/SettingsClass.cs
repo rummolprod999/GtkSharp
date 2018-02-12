@@ -44,7 +44,7 @@ namespace MyGtk
                 using (SqliteCommand cmd = new SqliteCommand(stm, con))
                 {
                     cmd.Parameters.Add(new SqliteParameter("@user", user));
-                    cmd.Parameters.Add(new SqliteParameter("@pass", password));
+                    cmd.Parameters.Add(new SqliteParameter("@pass", pass));
                     cmd.Parameters.Add(new SqliteParameter("@server", server));
                     cmd.ExecuteNonQuery();
                 }
